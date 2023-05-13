@@ -1,18 +1,11 @@
 defmodule SKOS do
   @moduledoc """
-  Documentation for `SKOS`.
+  Implementation of the Simple Knowledge Organization System (SKOS) vocabulary.
+
+  See <http://www.w3.org/TR/skos-primer>.
   """
 
-  @doc """
-  Hello world.
+  import RDF.Namespace
 
-  ## Examples
-
-      iex> SKOS.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  act_as_namespace RDF.NS.SKOS
 end
