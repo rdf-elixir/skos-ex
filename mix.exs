@@ -11,9 +11,14 @@ defmodule SKOS.MixProject do
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
       deps: deps(),
+      aliases: aliases(),
 
       # Dialyzer
-      dialyzer: dialyzer()
+      dialyzer: dialyzer(),
+
+      preferred_cli_env: [
+        check: :test
+      ]
     ]
   end
 
@@ -47,6 +52,19 @@ defmodule SKOS.MixProject do
       ignore_warnings: ".dialyzer_ignore.exs",
       # Error out when an ignore rule is no longer useful so we can remove it
       list_unused_filters: true
+    ]
+  end
+
+  defp aliases do
+    [
+      check: [
+        "clean",
+        "deps.unlock --check-unused",
+        "compile --warnings-as-errors",
+        "format --check-formatted",
+        "test --warnings-as-errors",
+        "credo"
+      ]
     ]
   end
 
