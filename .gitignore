@@ -29,4 +29,5 @@ skos-*.tar
 /priv/plts/*.plt
 /priv/plts/*.plt.hash
 
+# asdf
 .tool-versions*
