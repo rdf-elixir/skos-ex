@@ -2,7 +2,7 @@ defmodule SKOS.Concept do
   @moduledoc """
   A Grax schema struct for `skos:Concept`s.
 
-  See <https://www.w3.org/TR/skos-reference/#concepts`.
+  See <https://www.w3.org/TR/skos-reference/#concepts>.
   """
 
   use Grax.Schema

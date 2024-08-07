@@ -2,7 +2,7 @@ defmodule SKOS.Collection do
   @moduledoc """
   A Grax schema struct for `skos:Collection`s.
 
-  See <https://www.w3.org/TR/skos-reference/#collections`.
+  See <https://www.w3.org/TR/skos-reference/#collections>.
   """
 
   use Grax.Schema
