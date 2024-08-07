@@ -16,6 +16,10 @@ defmodule SKOS.MixProject do
       # Dialyzer
       dialyzer: dialyzer(),
 
+      # Docs
+      name: "SKOS.ex",
+      docs: docs(),
+
       preferred_cli_env: [
         check: :test
       ]
@@ -52,6 +56,21 @@ defmodule SKOS.MixProject do
       ignore_warnings: ".dialyzer_ignore.exs",
       # Error out when an ignore rule is no longer useful so we can remove it
       list_unused_filters: true
+    ]
+  end
+
+  defp docs do
+    [
+      main: "SKOS",
+      source_url: @scm_url,
+      source_ref: "v#{@version}",
+      extras: [
+        {:"README.md", [title: "About"]},
+        {:"CHANGELOG.md", [title: "CHANGELOG"]},
+        {:"CONTRIBUTING.md", [title: "CONTRIBUTING"]},
+        {:"LICENSE.md", [title: "License"]}
+      ],
+      skip_undefined_reference_warnings_on: ["CHANGELOG.md"]
     ]
   end
 
