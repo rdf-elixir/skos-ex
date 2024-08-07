@@ -24,3 +24,9 @@ skos-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Dialyzer
+/priv/plts/*.plt
+/priv/plts/*.plt.hash
+
+.tool-versions*

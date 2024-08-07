@@ -10,7 +10,10 @@ defmodule SKOS.MixProject do
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
-      deps: deps()
+      deps: deps(),
+
+      # Dialyzer
+      dialyzer: dialyzer()
     ]
   end
 
@@ -36,6 +39,15 @@ defmodule SKOS.MixProject do
       "LOCAL" -> {dep, path: "../#{dep}"}
       _ -> {dep, version}
     end
+  end
+
+  defp dialyzer do
+    [
+      plt_file: {:no_warn, "priv/plts/dialyzer.plt"},
+      ignore_warnings: ".dialyzer_ignore.exs",
+      # Error out when an ignore rule is no longer useful so we can remove it
+      list_unused_filters: true
+    ]
   end
 
   defp elixirc_paths(:test), do: ["lib", "test/support"]
