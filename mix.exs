@@ -22,11 +22,12 @@ defmodule SKOS.MixProject do
 
   defp deps do
     [
-      rdf_ex_dep(:rdf, "~> 1.2"),
-      rdf_ex_dep(:grax, "~> 0.4"),
+      rdf_ex_dep(:rdf, "~> 2.0"),
+      rdf_ex_dep(:grax, "~> 0.5"),
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:ex_doc, "~> 0.29", only: :dev, runtime: false},
-      {:excoveralls, "~> 0.16", only: :test}
+      {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false},
+      {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:excoveralls, "~> 0.18", only: :test}
     ]
   end
 
