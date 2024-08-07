@@ -51,7 +51,7 @@ defmodule SKOS.MixProject do
       links: %{
         "Homepage" => "https://rdf-elixir.dev",
         "GitHub" => @scm_url,
-        "Changelog" => @scm_url <> "/blob/master/CHANGELOG.md"
+        "Changelog" => @scm_url <> "/blob/main/CHANGELOG.md"
       },
       files: ~w[lib priv mix.exs .formatter.exs VERSION *.md]
     ]

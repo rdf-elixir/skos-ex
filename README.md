@@ -1,6 +1,6 @@
 [![Hex.pm](https://img.shields.io/hexpm/v/skos.svg?style=flat-square)](https://hex.pm/packages/skos)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/skos/)
-[![License](https://img.shields.io/hexpm/l/skos.svg)](https://github.com/rdf-elixir/skos-ex/blob/master/LICENSE.md)
+[![License](https://img.shields.io/hexpm/l/skos.svg)](https://github.com/rdf-elixir/skos-ex/blob/main/LICENSE.md)
 
 [![ExUnit Tests](https://github.com/rdf-elixir/skos-ex/actions/workflows/elixir-build-and-test.yml/badge.svg)](https://github.com/rdf-elixir/skos-ex/actions/workflows/elixir-build-and-test.yml)
 [![Dialyzer](https://github.com/rdf-elixir/skos-ex/actions/workflows/elixir-dialyzer.yml/badge.svg)](https://github.com/rdf-elixir/skos-ex/actions/workflows/elixir-dialyzer.yml)
